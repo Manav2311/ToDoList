@@ -30,11 +30,15 @@ Follow these steps to set up and run the project on your local machine.
 
 git clone https://github.com/your-username/todo-list-react.git
 cd todo-list-react
+
 2️⃣ Install Dependencies
 npm install
+
 3️⃣ Start the Development Server
+
 npm start
 🖥️ Project Structure
+
 /todo-list-react
 │── /src
 │   │── components
