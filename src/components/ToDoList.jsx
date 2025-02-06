@@ -51,27 +51,29 @@ function ToDoList() {
 
           /* Input & Button */
           input {
-            width: 70%;
-            padding: 10px;
-            border-radius: 5px;
-            border: none;
-            outline: none;
-            background: #0f3460;
-            color: white;
+               width: 80%;
+    height: 34px;
+    padding: 5px;
+    border-radius: 5px 10px;
+    border: none;
+    outline: none;
+    background: #0f3460;
+    color: white;
           }
 
-          button {
-            background: #e94560;
-            color: white;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: 0.3s;
+          .add-Btn {
+            background:rgb(69, 91, 233);
+    color: white;
+    padding: 13px 15px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
           }
 
-          button:hover {
-            background: #ff2e63;
+          .add-Btn:hover {
+            background:rgb(46, 164, 255);
           }
 
           /* Task List */
@@ -100,19 +102,20 @@ function ToDoList() {
 
           /* Delete Button - Bigger & Better */
           .delete-btn {
-            background: none;
+            background:none ;
             border: none;
             color: red;
             cursor: pointer;
-            font-size: 20px;
+            font-size: 30px;
             font-weight: bold;
-            padding: 10px;
+            padding: 10px 15px ;
             transition: 0.3s;
           }
 
           .delete-btn:hover {
-            color: darkred;
-            transform: scale(1.2);
+            color: white;
+            background:red;
+            transform: scale(1.1);
           }
 
           /* Task Completion */
@@ -141,7 +144,7 @@ function ToDoList() {
           value={task}
           onChange={(e) => setTask(e.target.value)}
         />
-        <button onClick={addTask}>Add</button>
+        <button class="add-Btn" onClick={addTask}>Add</button>
       </div>
 
       {/* Task List */}
